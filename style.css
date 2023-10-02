@@ -1,0 +1,67 @@
+/* import für Font von Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400&family=Red+Hat+Text:wght@300&display=swap");
+
+/*  body Basic Styling
+    Display Flex für die Ausrichtung der Elemente, um von oben nach unten zu gehen
+*/
+body {
+  margin: 0;
+  padding: 1% 10%;
+  font-family: "Red Hat Text", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* div Container als Flex */
+div {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+/* Tabelle, die Ränder kollapsen, um keinen Abstand zwischen den Zellen zu haben */
+table {
+  border-collapse: collapse;
+}
+
+/* td Styling width 3.7% um die gesamte verfügbare Breite auszufüllen */
+td {
+  border: 1px solid lightgrey;
+
+  padding: 1.5%;
+  width: 3.7%;
+  text-align: center;
+}
+
+/* th Styling, um von td unterscheiden zu können, Breite 3.7% um die gesamte Breite auszufüllen */
+th {
+  background-color: lightsalmon;
+  color: white;
+  border: 1px solid lightgrey;
+
+  padding: 1.5%;
+  width: 3.7%;
+  height: 3.7%;
+}
+
+/* flex wrap für divs mit der Klasse notes, um die Elemente untereinander anzeigen zu können */
+.notes {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* item, für den Container .notes, mit einer margin um Abstand einzufügen */
+.item {
+  background-color: lightsalmon;
+  margin: 1%;
+}
+
+/* Farbgebung, für th, und divs, um Hitnergrundfarben im PDF anzeigen zu können */
+@media print {
+  th,
+  div {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passwortmatrix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <label for="rowCount">Anzahl Zeilen:</label>
+      <input type="number" id="rowCount" min="1" value="1" />
+      <input
+        type="button"
+        value="Generieren"
+        id="generate"
+        onclick="generateTable();"
+      />
+      <input
+        type="button"
+        value="PDF drucken"
+        id="printPDF"
+        onclick="printPDF();"
+      />
+    </div>
+
+    <table id="passwordCard"></table>
+
+    <div class="notes">
+      <div class="item">
+        <p>Webseite:</p>
+        <input type="text" />
+        <p>Koordinate:</p>
+        <input type="text" />
+      </div>
+      <div class="item">
+        <p>Webseite:</p>
+        <input type="text" />
+        <p>Koordinate:</p>
+        <input type="text" />
+      </div>
+      <div class="item">
+        <p>Webseite:</p>
+        <input type="text" />
+        <p>Koordinate:</p>
+        <input type="text" />
+      </div>
+      <div class="item">
+        <p>Webseite:</p>
+        <input type="text" />
+        <p>Koordinate:</p>
+        <input type="text" />
+      </div>
+      <div class="item">
+        <p>Webseite:</p>
+        <input type="text" />
+        <p>Koordinate:</p>
+        <input type="text" />
+      </div>
+      <div class="item">
+        <p>Webseite:</p>
+        <input type="text" />
+        <p>Koordinate:</p>
+        <input type="text" />
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
